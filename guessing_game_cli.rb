@@ -6,13 +6,14 @@ end
 def run_guessing_game
   comp_number = rand(6) + 1
   user_input = get_user_input
+  
+  if user_input == "exit"
+    puts "Goodbye!"
+  end 
   if user_input != comp_number.to_i
     puts "Sorry! The computer guessed #{comp_number}"
   end 
   if user_input == comp_number.to_i
     puts "You guessed the correct number!"
-  end 
-  if user_input == "exit"
-    puts "Goodbye!"
   end 
 end 
