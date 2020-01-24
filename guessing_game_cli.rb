@@ -9,10 +9,10 @@ def run_guessing_game
   if user_input == "exit"
     puts "Goodbye!"
   end 
-  if user_input != comp_number
-    puts "Sorry! The computer guessed #{comp_number}"
+  if user_input != comp_number.to_i
+    puts "Sorry! The computer guessed #{comp_number.to_i}"
   end 
-  if user_input == comp_number 
+  if user_input == comp_number.to_i
     puts "You guessed the correct number!"
   end 
 end 
