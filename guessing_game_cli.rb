@@ -14,10 +14,10 @@ def run_guessing_game
   # compare user input to the random number 
   if user_input == "exit"
     puts "Goodbye!"
-  elsif user_input != comp_number
-    puts "Sorry! The computer guessed #{comp_number}"
   elsif user_input == comp_number 
     puts "You guessed the correct number!"
+  elsif user_input != comp_number
+    puts "Sorry! The computer guessed #{comp_number}"
   end 
   # else if user_input != comp_number
   #   puts "Sorry! The computer guessed #{comp_number}"
