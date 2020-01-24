@@ -8,9 +8,11 @@ def run_guessing_game
   user_input = get_user_input
   if user_input == "exit"
     puts "Goodbye!"
-  elsif user_input != comp_number
+  end 
+  if user_input != comp_number
     puts "Sorry! The computer guessed #{comp_number}"
-  elsif user_input == comp_number 
+  end 
+  if user_input == comp_number 
     puts "You guessed the correct number!"
   end 
 end 
