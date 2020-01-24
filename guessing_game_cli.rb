@@ -5,7 +5,7 @@ end
 
 def run_guessing_game
   # should generate and store a random number between 1 & 6
-  comp_number = rand(1..6)
+  comp_number = rand(6) + 1
   
   # prompts the user to guess their own number between 1 & 6
   # capture user input from the command line 
